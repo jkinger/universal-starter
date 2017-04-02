@@ -72,8 +72,10 @@ app.use(cacheControl, express.static(path.join(ROOT, 'dist/client'), {index: fal
 // ** Example API
 // Notice API should be in aseparate process
 import { serverApi, createTodoApi } from './backend/api';
+import { robots } from './backend/utilities';
 // Our API for demos only
 app.get('/data.json', serverApi);
+app.get('/robots.txt', robots);
 app.use('/api', createTodoApi());
 
 process.on('uncaughtException', function (err) { 

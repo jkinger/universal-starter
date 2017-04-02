@@ -33,6 +33,9 @@ A minimal Angular 2 starter for Universal JavaScript using TypeScript 2 and Webp
 ## AoT and Prod
 * `npm run build:prod:ngc` to compile the ngfactory files and build prod
 
+## Prod without AoT
+* `npm run build:prod` to build prod
+
 ## Universal "Gotchas"
 
 > When building Universal components in Angular 2 there are a few things to keep in mind.
